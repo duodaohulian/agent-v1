@@ -1,0 +1,19 @@
+{
+  "candidate": "1.0.12 NumPy-only inference path",
+  "case_ref": "demo_case_001",
+  "feature_order_sha256": "d4a5ecb56733db87f505473a7be1497a7fdd174c0994748d5b9574f7373d3200",
+  "group_maximum_absolute_delta": {
+    "age": 0.0,
+    "ct_original": 0.0,
+    "ct_shape": 0.0,
+    "ct_transformed": 0.0,
+    "ct_wavelet": 0.0,
+    "male": 0.0,
+    "pathology": 0.0,
+    "t_stage_index": 0.0,
+    "type_index": 0.0
+  },
+  "maximum_absolute_delta": 0.0,
+  "passed": true,
+  "reference": "archived FoldPreprocessor pandas path"
+}

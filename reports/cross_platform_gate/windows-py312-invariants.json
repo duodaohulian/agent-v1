@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.13",
+  "installed_origin": "<RELEASE_ROOT>\\.venv-release\\Lib\\site-packages\\crc_lnm_mcp\\__init__.py",
+  "wheel_sha256": "625d494a3b683c567b256d1de846ea126cf16b4b0b8cb0a5ff950c60416573e9",
+  "wheel_size_bytes": 2921012,
+  "weight_count": 1,
+  "model_state_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+  "runtime_invariants": {
+    "torch_imported_before_prediction": false,
+    "torch_imported_after_lightweight_tools": false,
+    "load_count": 1,
+    "load_attempt_count": 1,
+    "prediction_count": 2,
+    "first_probability": 0.5726384520530701,
+    "second_probability": 0.5726384520530701,
+    "member_count": 1,
+    "ensemble_enabled": false,
+    "selected_seed": 2024
+  },
+  "smoke_count": 0,
+  "peak_rss_bytes": 0,
+  "smokes": []
+}

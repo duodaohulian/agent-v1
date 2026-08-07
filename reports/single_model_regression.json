@@ -1,0 +1,17 @@
+{
+  "absolute_delta": 0.05530891567468643,
+  "case_ref": "demo_case_001",
+  "ensemble_enabled": false,
+  "ensemble_predicted_class": 1,
+  "ensemble_probability": 0.6279473677277565,
+  "feature_ordering_checksum": "d4a5ecb56733db87f505473a7be1497a7fdd174c0994748d5b9574f7373d3200",
+  "member_count": 1,
+  "predicted_class": 1,
+  "predicted_class_changed": false,
+  "preprocessing_checksum": "9867c7e28ad7df2a4f945f9f8ce8771f1683297c889a5597e1b186537f7bb65a",
+  "selected_model_id": "seed_2024",
+  "selected_seed": 2024,
+  "single_model_probability": 0.5726384520530701,
+  "threshold": 0.3529504342004657,
+  "threshold_unchanged": true
+}

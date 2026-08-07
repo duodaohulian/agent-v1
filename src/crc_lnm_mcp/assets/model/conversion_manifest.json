@@ -1,0 +1,698 @@
+{
+  "array_count": 66,
+  "arrays": [
+    {
+      "asset_key": "classifier__0__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "e3a6073e572f1fde4f6a4bdec5af7351f4afdbb52ea6f3226daf161e54b093c2",
+      "shape": [
+        64
+      ],
+      "source_key": "classifier.0.bias"
+    },
+    {
+      "asset_key": "classifier__0__weight",
+      "dtype": "float32",
+      "parameter_count": 16384,
+      "sha256": "02b43d57a8e25417824a557b9d333bfc5d7e3f27b4be9831162d2afd17a89970",
+      "shape": [
+        64,
+        256
+      ],
+      "source_key": "classifier.0.weight"
+    },
+    {
+      "asset_key": "classifier__2__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "12505340ada645e03dad6a6994fdc10d3c8afc6e32ea3b01825c3995be7f39d8",
+      "shape": [
+        64
+      ],
+      "source_key": "classifier.2.bias"
+    },
+    {
+      "asset_key": "classifier__2__weight",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "e12f18e46ce98f981cbed6cd1873ec0b3b9b95e47f0412e24c96377d0ed22275",
+      "shape": [
+        64
+      ],
+      "source_key": "classifier.2.weight"
+    },
+    {
+      "asset_key": "classifier__4__bias",
+      "dtype": "float32",
+      "parameter_count": 2,
+      "sha256": "e83d6e8b5dc6060803890ba57ad7afe703c5e7f042d44aad5c7d67e101fda2a4",
+      "shape": [
+        2
+      ],
+      "source_key": "classifier.4.bias"
+    },
+    {
+      "asset_key": "classifier__4__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "f524496781c92db4b88bce9863da659bf0fa919e714b61bc0d3fd303e7c0faa4",
+      "shape": [
+        2,
+        64
+      ],
+      "source_key": "classifier.4.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__continuous_encoder__0__bias",
+      "dtype": "float32",
+      "parameter_count": 16,
+      "sha256": "10dd87d4b215f92366c5e2917d488d6f1d841e0d7454ab5df8f955e3133aff3e",
+      "shape": [
+        16
+      ],
+      "source_key": "clinical_encoder.continuous_encoder.0.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__continuous_encoder__0__weight",
+      "dtype": "float32",
+      "parameter_count": 32,
+      "sha256": "6dd2facd51506b8c12b82038bdebc50558d70729ac12ee2086ca1e320c8e122f",
+      "shape": [
+        16,
+        2
+      ],
+      "source_key": "clinical_encoder.continuous_encoder.0.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__continuous_encoder__2__bias",
+      "dtype": "float32",
+      "parameter_count": 16,
+      "sha256": "3365449858fe53f86d441dbf359e4c1cc2afd935b5e03acbee61d8817b7022a7",
+      "shape": [
+        16
+      ],
+      "source_key": "clinical_encoder.continuous_encoder.2.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__continuous_encoder__2__weight",
+      "dtype": "float32",
+      "parameter_count": 16,
+      "sha256": "35740a3da41889d2c962275c7901ecfd4103785b59ab4b6a41ca2d7ad472ffc7",
+      "shape": [
+        16
+      ],
+      "source_key": "clinical_encoder.continuous_encoder.2.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__0__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "4c3ea8d77473022b7d63f1a4976906cfb62ff195b88fedbd0cb736cbd5d3d89f",
+      "shape": [
+        64
+      ],
+      "source_key": "clinical_encoder.projection.0.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__0__weight",
+      "dtype": "float32",
+      "parameter_count": 1536,
+      "sha256": "d79c1db7bd9c3a706db2b6a9172c0d35bb51885adaf7319493b6ab67aa363a8a",
+      "shape": [
+        64,
+        24
+      ],
+      "source_key": "clinical_encoder.projection.0.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__2__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "ced33b2f86fe62847133560477f9021c9af47a95fcd21b07ee1b743ebfcb6512",
+      "shape": [
+        64
+      ],
+      "source_key": "clinical_encoder.projection.2.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__2__weight",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "850d7ecd5c58e97d8efbc09f55dcd9c14325011391493b6ab04b1994b946945e",
+      "shape": [
+        64
+      ],
+      "source_key": "clinical_encoder.projection.2.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "4d8fc7792ec89f9c42945ad74052e3a63398d8121629fdbd615d95cfcc9d1f84",
+      "shape": [
+        128
+      ],
+      "source_key": "clinical_encoder.projection.4.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__4__weight",
+      "dtype": "float32",
+      "parameter_count": 8192,
+      "sha256": "7c1d7e092f04f8e89672a0a423240788a9d22c1b6ebce977b26e6f6fb50aca9d",
+      "shape": [
+        128,
+        64
+      ],
+      "source_key": "clinical_encoder.projection.4.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "845e857e812575b2bdcbfd6e9c8aa6f6ba3faec1b26f3c227e35d947aba6d35f",
+      "shape": [
+        128
+      ],
+      "source_key": "clinical_encoder.projection.6.bias"
+    },
+    {
+      "asset_key": "clinical_encoder__projection__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "47ecd0d56f604f2f943f100d84cc0c720080247c2b4a46a73a5048323a35e8e0",
+      "shape": [
+        128
+      ],
+      "source_key": "clinical_encoder.projection.6.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__t_stage_embedding__weight",
+      "dtype": "float32",
+      "parameter_count": 32,
+      "sha256": "c89da41cd511d1d566f93ccd0eafbde867d3f52a785a5c729b869e45a4c245d5",
+      "shape": [
+        8,
+        4
+      ],
+      "source_key": "clinical_encoder.t_stage_embedding.weight"
+    },
+    {
+      "asset_key": "clinical_encoder__type_embedding__weight",
+      "dtype": "float32",
+      "parameter_count": 16,
+      "sha256": "10b9ff369e4f3c650644f31cd6bddbbe022c68054a7b6f5ae0e3889dcf33432a",
+      "shape": [
+        4,
+        4
+      ],
+      "source_key": "clinical_encoder.type_embedding.weight"
+    },
+    {
+      "asset_key": "cross_attention__attention__in_proj_bias",
+      "dtype": "float32",
+      "parameter_count": 384,
+      "sha256": "07be3e6991cfaeefbdba8d494aecd26ac46712cb0390f80edf772729dfba0f96",
+      "shape": [
+        384
+      ],
+      "source_key": "cross_attention.attention.in_proj_bias"
+    },
+    {
+      "asset_key": "cross_attention__attention__in_proj_weight",
+      "dtype": "float32",
+      "parameter_count": 49152,
+      "sha256": "d2ee3347c2843a8f67614e8373e8a8f67f3711bf1b405ad72c06881f9ccd4e44",
+      "shape": [
+        384,
+        128
+      ],
+      "source_key": "cross_attention.attention.in_proj_weight"
+    },
+    {
+      "asset_key": "cross_attention__attention__out_proj__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "c90d34375c682d218c455476eae6519c747007d79e256a1fbccf823022a7b521",
+      "shape": [
+        128
+      ],
+      "source_key": "cross_attention.attention.out_proj.bias"
+    },
+    {
+      "asset_key": "cross_attention__attention__out_proj__weight",
+      "dtype": "float32",
+      "parameter_count": 16384,
+      "sha256": "978a923d10a34945ce6ade20d71a963ff853da403403905e128d0e2f9d2bbad0",
+      "shape": [
+        128,
+        128
+      ],
+      "source_key": "cross_attention.attention.out_proj.weight"
+    },
+    {
+      "asset_key": "cross_attention__normalization__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "83f87de6c6c88bf52304fdc25593b8b5492412fc515a63c35db4f4fa0d1342c3",
+      "shape": [
+        128
+      ],
+      "source_key": "cross_attention.normalization.bias"
+    },
+    {
+      "asset_key": "cross_attention__normalization__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "22975e9c49f629048048c8d1f049817b8644c9a630822ecd76d0364dcb2ba529",
+      "shape": [
+        128
+      ],
+      "source_key": "cross_attention.normalization.weight"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__0__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "ba1e9c269f8a365ca7f4822bd0577f64b6ebb08d6cca2dc993b823b646983d27",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.0.bias"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__0__weight",
+      "dtype": "float32",
+      "parameter_count": 11904,
+      "sha256": "6b3c3e333fb2568aa8f8ecbced692d3377e1ac1a0d7b530e2934b2d49db17f89",
+      "shape": [
+        128,
+        93
+      ],
+      "source_key": "ct_original_encoder.network.0.weight"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__2__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "1124d53338f18f4c40b2c5ab2f6a3a99c13f7c8cda7d2b87bfb3ca84e1cf9d03",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.2.bias"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__2__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "e9d7489c2668cee38d0fa344845e9cbfc7659a0710d356afb5852e84cf643ee9",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.2.weight"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "20c04c2740d1e134b680522a734f92ca46615765732a7a147c62ee897c64e17d",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.4.bias"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__4__weight",
+      "dtype": "float32",
+      "parameter_count": 16384,
+      "sha256": "dd80d463675a2444d2b7b4b7c67739fd65112af1cc69ae47ea36e7c14aec9034",
+      "shape": [
+        128,
+        128
+      ],
+      "source_key": "ct_original_encoder.network.4.weight"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "ee251718af80f8e6de135182b397fc3fb1500693094e6d39318de5199e0adfbc",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.6.bias"
+    },
+    {
+      "asset_key": "ct_original_encoder__network__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "b5ebeeabc617aecb1f62b812f42b44060f1cfe3f14849a44d8a7b9e2ccfb5f82",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_original_encoder.network.6.weight"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__0__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "333782c4867db7ff1d316cb1be0b7444e8e173dcbb49ddb996c9a697a93c3477",
+      "shape": [
+        64
+      ],
+      "source_key": "ct_shape_encoder.network.0.bias"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__0__weight",
+      "dtype": "float32",
+      "parameter_count": 896,
+      "sha256": "058eb36ee65a9d4761fa81ba515ad15e34863efb353dc9d02b3b7ddd9cf90845",
+      "shape": [
+        64,
+        14
+      ],
+      "source_key": "ct_shape_encoder.network.0.weight"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__2__bias",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "114b0a86d429bda05f3fcbc3af356b9e837c159acda131738d4db0e2cf9f3cb8",
+      "shape": [
+        64
+      ],
+      "source_key": "ct_shape_encoder.network.2.bias"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__2__weight",
+      "dtype": "float32",
+      "parameter_count": 64,
+      "sha256": "975d9291615be7943ca0719aeb24e8cbcda5ff55f9a1521c7e8daef8ccbd8ea7",
+      "shape": [
+        64
+      ],
+      "source_key": "ct_shape_encoder.network.2.weight"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "3f3805e65c4d05b847e103a215e5ea7d27e4735e6d67c78cae493301d3384a17",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_shape_encoder.network.4.bias"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__4__weight",
+      "dtype": "float32",
+      "parameter_count": 8192,
+      "sha256": "914f87a439db42573384996b383af553c42e1d5ceb862d9a5e78b68b6de0b136",
+      "shape": [
+        128,
+        64
+      ],
+      "source_key": "ct_shape_encoder.network.4.weight"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "aa76aafefa97cb74a94c3e69887642a39e81ceb74cd0eab0ae304e42d096e969",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_shape_encoder.network.6.bias"
+    },
+    {
+      "asset_key": "ct_shape_encoder__network__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "d79037f16cc68c3dbb9e4930ea8084c5062dc5910366395cd6b747c2592ddf72",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_shape_encoder.network.6.weight"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__0__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "386ec5c7881fd648ae5627807c37d6a9d4e3d719175f14acf9d28cc950d2d806",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_transformed_encoder.network.0.bias"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__0__weight",
+      "dtype": "float32",
+      "parameter_count": 142848,
+      "sha256": "995e05d6ee2bb5f379fff43f6e75b4f6262494036cc8c9cf56ade7e666c78f69",
+      "shape": [
+        256,
+        558
+      ],
+      "source_key": "ct_transformed_encoder.network.0.weight"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__2__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "2b9e5897238fd9c4aa6a6fd38cf7a9fa1262d13cceb0b49f3bf7cbbed24bb4db",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_transformed_encoder.network.2.bias"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__2__weight",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "7916fe32d9f9e5e72258cf4f93811532474321f9d43fe0f5d9ee14951ad0306a",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_transformed_encoder.network.2.weight"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "84521b80a8c4df0a99241d359899b0a3c51178bdeba1885d7126567d11ec1e3c",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_transformed_encoder.network.4.bias"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__4__weight",
+      "dtype": "float32",
+      "parameter_count": 32768,
+      "sha256": "129e8823bf4697089e175a0f5d1c24709fda1e6b297b92a8ff7bfbf73cd44652",
+      "shape": [
+        128,
+        256
+      ],
+      "source_key": "ct_transformed_encoder.network.4.weight"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "6c4056370cb71fe624815c1529d391997ae41626ead41ea545892b63ca71320a",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_transformed_encoder.network.6.bias"
+    },
+    {
+      "asset_key": "ct_transformed_encoder__network__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "fac085a812e5ae807940e11f117a40ab074ce2c369bbf1fe6e65b08044b1c935",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_transformed_encoder.network.6.weight"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__0__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "13158bdd3274247dc1851a1d70fb980ea9d67503a13dd8c4a932e7272e3a1185",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_wavelet_encoder.network.0.bias"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__0__weight",
+      "dtype": "float32",
+      "parameter_count": 190464,
+      "sha256": "93ed313fe8d61fd1d666846017c73b84f91349206d0db4b65167e02cf0a3033d",
+      "shape": [
+        256,
+        744
+      ],
+      "source_key": "ct_wavelet_encoder.network.0.weight"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__2__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "12927db9193e5fd899690ef4942ae6b04b51cb7e71ff20075b0bdedeb9b9b0dc",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_wavelet_encoder.network.2.bias"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__2__weight",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "7dfacf23239ad555df09014e320b0dcec88483eb6df6fc02e3a56788630e3ae5",
+      "shape": [
+        256
+      ],
+      "source_key": "ct_wavelet_encoder.network.2.weight"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "7dbfdc52a1da0088311493a75095b4678091d3d4f6629efe3d9c555032276751",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_wavelet_encoder.network.4.bias"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__4__weight",
+      "dtype": "float32",
+      "parameter_count": 32768,
+      "sha256": "d4274e5be2fd42ac35c2dd89ea7ec645fc2e77e9eec76beb5fe4c21af191c4de",
+      "shape": [
+        128,
+        256
+      ],
+      "source_key": "ct_wavelet_encoder.network.4.weight"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "88b63a300ce9cc497aee1bff4bdd018a31fc4808f4a9304bb976fd92dda9d134",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_wavelet_encoder.network.6.bias"
+    },
+    {
+      "asset_key": "ct_wavelet_encoder__network__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "968ba446922cd0fdc4057af42b8605da83e5793bc6e253f2ce03d79cd51477c8",
+      "shape": [
+        128
+      ],
+      "source_key": "ct_wavelet_encoder.network.6.weight"
+    },
+    {
+      "asset_key": "path_encoder__network__0__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "3709b042569b6d22193bcf1dbfd775ce90851f1b5d5ffae5f665608c0a5b490e",
+      "shape": [
+        256
+      ],
+      "source_key": "path_encoder.network.0.bias"
+    },
+    {
+      "asset_key": "path_encoder__network__0__weight",
+      "dtype": "float32",
+      "parameter_count": 196608,
+      "sha256": "c72ebaaa0066cc66ca02e988352c6c9ed91884fa0057e6831c5b0f6ed9b4dd07",
+      "shape": [
+        256,
+        768
+      ],
+      "source_key": "path_encoder.network.0.weight"
+    },
+    {
+      "asset_key": "path_encoder__network__2__bias",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "74def692e149b21270ed4259541855f40996678f93ab1a2b7897f5d58c74a10c",
+      "shape": [
+        256
+      ],
+      "source_key": "path_encoder.network.2.bias"
+    },
+    {
+      "asset_key": "path_encoder__network__2__weight",
+      "dtype": "float32",
+      "parameter_count": 256,
+      "sha256": "0025ff74afa19ee13b47ab277778c697238e95e88f56f4f1b5f9b7f9aae97276",
+      "shape": [
+        256
+      ],
+      "source_key": "path_encoder.network.2.weight"
+    },
+    {
+      "asset_key": "path_encoder__network__4__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "53f1a35f3d5c2de3b074d089d720a887fb78d713bcd902af2c5b0efc335957ff",
+      "shape": [
+        128
+      ],
+      "source_key": "path_encoder.network.4.bias"
+    },
+    {
+      "asset_key": "path_encoder__network__4__weight",
+      "dtype": "float32",
+      "parameter_count": 32768,
+      "sha256": "d7137f08e4bedbf64fa39b4c088684f784eadf35cf16d2aabea98bc602604b3e",
+      "shape": [
+        128,
+        256
+      ],
+      "source_key": "path_encoder.network.4.weight"
+    },
+    {
+      "asset_key": "path_encoder__network__6__bias",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "752ba95c868d5ed3b4171d58c79355f246532753a6e0a52944991f4db137ca5e",
+      "shape": [
+        128
+      ],
+      "source_key": "path_encoder.network.6.bias"
+    },
+    {
+      "asset_key": "path_encoder__network__6__weight",
+      "dtype": "float32",
+      "parameter_count": 128,
+      "sha256": "2b033150c6180a7bfddb0b19dcf4047a53fedf9eb05333960ac5095b2090320e",
+      "shape": [
+        128
+      ],
+      "source_key": "path_encoder.network.6.weight"
+    }
+  ],
+  "conversion_script_version": "1.0.0",
+  "ensemble_enabled": false,
+  "member_count": 1,
+  "model_architecture": "attention_path_ct_clinical",
+  "parameter_count": 763842,
+  "research_use_only": true,
+  "runtime_asset_file": "model_runtime.npz",
+  "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+  "runtime_framework": "numpy",
+  "selected_seed": 2024,
+  "source_framework": "pytorch",
+  "source_weight_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+  "threshold": 0.3529504342004657,
+  "threshold_recalibrated": false
+}

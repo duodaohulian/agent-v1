@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.13",
+  "cache_state": "cold",
+  "wheel_size_bytes": 2932183,
+  "uv_cache_bytes": 248820142,
+  "initialize_seconds": 48.180069,
+  "tools_list_seconds": 0.003322,
+  "first_prediction_seconds": 0.070239,
+  "second_prediction_seconds": 0.010862,
+  "peak_rss_bytes": 114880512,
+  "smoke": {
+    "status": "PASS",
+    "target_tool": "crc_lnm_predict_multimodal",
+    "protocol_version": "2025-11-25",
+    "tools": [
+      "crc_lnm_get_model_info",
+      "crc_lnm_case_data_qc",
+      "crc_lnm_prepare_ct_features",
+      "crc_lnm_prepare_pathology_features",
+      "crc_lnm_predict_multimodal",
+      "crc_lnm_generate_report"
+    ],
+    "called_tools": [
+      "crc_lnm_case_data_qc",
+      "crc_lnm_prepare_ct_features",
+      "crc_lnm_prepare_pathology_features",
+      "crc_lnm_predict_multimodal",
+      "crc_lnm_predict_multimodal"
+    ],
+    "model_info": null,
+    "prediction": {
+      "artifact": {
+        "artifact_id": "pred_902a76bc0040144e6a9d29b7280359bf",
+        "artifact_type": "prediction",
+        "media_type": "application/json",
+        "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+        "created_at": "2026-08-05T09:40:46.792707Z",
+        "expires_at": "2026-08-05T10:10:46.792707Z"
+      },
+      "positive_probability": 0.5726382732391357,
+      "threshold": 0.3529504342004657,
+      "threshold_recalibrated": false,
+      "predicted_class": 1,
+      "selected_model_id": "seed_2024",
+      "selected_seed": 2024,
+      "member_count": 1,
+      "ensemble_enabled": false,
+      "runtime_backend": "numpy",
+      "source_framework": "pytorch",
+      "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+      "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+      "decision_margin": 0.21968783903867006,
+      "absolute_threshold_distance": 0.21968783903867006,
+      "decision_proximity": "far_from_threshold",
+      "human_review_required": true,
+      "review_priority": "routine",
+      "review_reasons": [
+        "SINGLE_MODEL_DEPLOYMENT",
+        "THRESHOLD_NOT_RECALIBRATED"
+      ],
+      "ct_source_used": "precomputed",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+      "independent_test_claim": false,
+      "research_use_only": true,
+      "performance_reference": {
+        "metric": "oof_roc_auc",
+        "value": 0.7749
+      },
+      "load_seconds": 0.059447299980092794,
+      "inference_seconds": 0.06280949999927543
+    },
+    "report": null,
+    "timings": {
+      "initialize_seconds": 48.180069,
+      "tools_list_seconds": 0.003322,
+      "crc_lnm_case_data_qc_seconds_1": 0.010384,
+      "crc_lnm_prepare_ct_features_seconds_1": 0.010906,
+      "crc_lnm_prepare_pathology_features_seconds_1": 0.008362,
+      "crc_lnm_predict_multimodal_seconds_1": 0.070239,
+      "crc_lnm_predict_multimodal_seconds_2": 0.010862
+    },
+    "total_seconds": 48.898459,
+    "peak_rss_bytes": 114880512,
+    "stderr": "WARN Fixing invalid version specifier by removing stray quotes (before: `>= '2.7'`; after: `>= 2.7`)\nDownloading cryptography (3.7MiB)\nDownloading pywin32 (6.6MiB)\nDownloading pygments (1.2MiB)\nDownloading pydantic-core (2.0MiB)\nDownloading numpy (12.0MiB)\nDownloading beartype (1.3MiB)\nDownloading lupa (1.8MiB)\nDownloading burner-redis (1.1MiB)\n Downloaded burner-redis\n Downloaded pygments\n Downloaded beartype\n Downloaded lupa\n Downloaded pydantic-core\n Downloaded cryptography\n Downloaded pywin32\n Downloaded numpy\nInstalled 83 packages in 4.52s\n[08/05/26 17:40:46] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+    "leaked_child_processes": [],
+    "network_connections": [
+      "addr(ip='127.0.0.1', port=61106)->addr(ip='127.0.0.1', port=61107):ESTABLISHED",
+      "addr(ip='127.0.0.1', port=61107)->addr(ip='127.0.0.1', port=61106):ESTABLISHED"
+    ],
+    "network_violations": [],
+    "cwd_files_created": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED",
+  "platform": "WSL2 Ubuntu 26.04 LTS",
+  "python_version": "3.10.20",
+  "uv_version": "0.12.1",
+  "stage": "dependency_install",
+  "timeout_seconds": 1804.03,
+  "uv_cache_bytes_after_timeout": 897113845,
+  "wheel_sha256": "88974a943834246dc03655b61ec9ed9139010608df52e5a028a4ad68af14d4c4",
+  "mcp_initialize_started": false,
+  "tools_list_started": false,
+  "prediction_started": false,
+  "reason": "Default PyPI dependency installation did not complete before the 30-minute release-gate limit.",
+  "cleanup_status": "PASS",
+  "residual_crc_lnm_processes": 0
+}

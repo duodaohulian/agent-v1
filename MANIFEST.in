@@ -1,0 +1,13 @@
+include README.md
+include .gitignore
+include CHANGELOG.md
+include RELEASE_CHECKSUMS.sha256
+include modelscope-mcp.json
+graft src/crc_lnm_mcp
+global-exclude __pycache__ *.py[cod] *.pt *.pth *.ckpt .env .env.*
+prune src/wei_multimodal
+prune models
+prune data
+prune demo
+prune configs
+prune tests

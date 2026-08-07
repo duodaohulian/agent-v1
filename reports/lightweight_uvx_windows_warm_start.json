@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.13",
+  "cache_state": "warm",
+  "wheel_size_bytes": 2932183,
+  "uv_cache_bytes": 248820142,
+  "initialize_seconds": 4.939355,
+  "tools_list_seconds": 0.006723,
+  "first_prediction_seconds": 0.073154,
+  "second_prediction_seconds": 0.010635,
+  "peak_rss_bytes": 116109312,
+  "smoke": {
+    "status": "PASS",
+    "target_tool": "crc_lnm_predict_multimodal",
+    "protocol_version": "2025-11-25",
+    "tools": [
+      "crc_lnm_get_model_info",
+      "crc_lnm_case_data_qc",
+      "crc_lnm_prepare_ct_features",
+      "crc_lnm_prepare_pathology_features",
+      "crc_lnm_predict_multimodal",
+      "crc_lnm_generate_report"
+    ],
+    "called_tools": [
+      "crc_lnm_case_data_qc",
+      "crc_lnm_prepare_ct_features",
+      "crc_lnm_prepare_pathology_features",
+      "crc_lnm_predict_multimodal",
+      "crc_lnm_predict_multimodal"
+    ],
+    "model_info": null,
+    "prediction": {
+      "artifact": {
+        "artifact_id": "pred_d6b9bb03ab5c10f9988db0798cb237ba",
+        "artifact_type": "prediction",
+        "media_type": "application/json",
+        "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+        "created_at": "2026-08-05T09:40:53.552974Z",
+        "expires_at": "2026-08-05T10:10:53.552974Z"
+      },
+      "positive_probability": 0.5726382732391357,
+      "threshold": 0.3529504342004657,
+      "threshold_recalibrated": false,
+      "predicted_class": 1,
+      "selected_model_id": "seed_2024",
+      "selected_seed": 2024,
+      "member_count": 1,
+      "ensemble_enabled": false,
+      "runtime_backend": "numpy",
+      "source_framework": "pytorch",
+      "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+      "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+      "decision_margin": 0.21968783903867006,
+      "absolute_threshold_distance": 0.21968783903867006,
+      "decision_proximity": "far_from_threshold",
+      "human_review_required": true,
+      "review_priority": "routine",
+      "review_reasons": [
+        "SINGLE_MODEL_DEPLOYMENT",
+        "THRESHOLD_NOT_RECALIBRATED"
+      ],
+      "ct_source_used": "precomputed",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+      "independent_test_claim": false,
+      "research_use_only": true,
+      "performance_reference": {
+        "metric": "oof_roc_auc",
+        "value": 0.7749
+      },
+      "load_seconds": 0.06214290001662448,
+      "inference_seconds": 0.06572030001552776
+    },
+    "report": null,
+    "timings": {
+      "initialize_seconds": 4.939355,
+      "tools_list_seconds": 0.006723,
+      "crc_lnm_case_data_qc_seconds_1": 0.013381,
+      "crc_lnm_prepare_ct_features_seconds_1": 0.011009,
+      "crc_lnm_prepare_pathology_features_seconds_1": 0.00877,
+      "crc_lnm_predict_multimodal_seconds_1": 0.073154,
+      "crc_lnm_predict_multimodal_seconds_2": 0.010635
+    },
+    "total_seconds": 5.541534,
+    "peak_rss_bytes": 116109312,
+    "stderr": "[08/05/26 17:40:53] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+    "leaked_child_processes": [],
+    "network_connections": [
+      "addr(ip='127.0.0.1', port=65479)->addr(ip='127.0.0.1', port=65480):ESTABLISHED",
+      "addr(ip='127.0.0.1', port=65480)->addr(ip='127.0.0.1', port=65479):ESTABLISHED"
+    ],
+    "network_violations": [],
+    "cwd_files_created": []
+  }
+}

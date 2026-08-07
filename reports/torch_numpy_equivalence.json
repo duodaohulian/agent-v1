@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "case_count": 101,
+  "demo_case_count": 1,
+  "synthetic_case_count": 100,
+  "fixed_random_seed": 20240805,
+  "preprocessing_max_absolute_error": 0.0,
+  "layerwise_max_absolute_error": 1.9073486328125e-06,
+  "logit_max_absolute_error": 1.519918441772461e-06,
+  "probability_max_absolute_error": 6.556510925292969e-07,
+  "probability_mean_absolute_error": 5.658245691568545e-08,
+  "probability_p95_absolute_error": 2.384185791015625e-07,
+  "predicted_class_mismatches": 0,
+  "demo": {
+    "torch_probability": 0.5726384520530701,
+    "numpy_probability": 0.5726382732391357,
+    "absolute_error": 1.7881393432617188e-07
+  },
+  "threshold": 0.3529504342004657,
+  "selected_seed": 2024,
+  "member_count": 1,
+  "ensemble_enabled": false
+}

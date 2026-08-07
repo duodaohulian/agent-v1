@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crc-lnm-medical-agent-twomeme"
+version = "1.0.16"
+description = "Full-lazy single-model CRC-LNM research-assistance MCP for ModelScope STDIO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp==2.14.7",
+    "pydantic==2.13.4",
+    "numpy==2.1.3",
+]
+
+[project.scripts]
+crc-lnm-medical-agent = "crc_lnm_mcp.server:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["crc_lnm_mcp*"]
+exclude = ["wei_multimodal*"]
+
+[tool.setuptools.package-data]
+crc_lnm_mcp = [
+    "assets/**/*.json",
+    "assets/**/*.jsonl",
+    "assets/**/*.npz",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["crc_lnm_mcp", "wei_multimodal"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/crc_lnm_mcp"]
+
+[tool.pytest.ini_options]
+cache_dir = ".pytest_cache"
+addopts = "-p no:cacheprovider --tb=short"

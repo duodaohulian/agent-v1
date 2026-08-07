@@ -1,0 +1,541 @@
+{
+  "status": "PASS",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.13",
+  "installed_origin": "<TEMP_WORKSPACE>\\AppData\\Local\\Temp\\crc-lnm-portability-win-py312-20260805\\Lib\\site-packages\\crc_lnm_mcp\\__init__.py",
+  "wheel_sha256": "4654cd40e8e5d52cc0b5855292f6f7741889233817f6e85ad1663902a73b58d9",
+  "wheel_size_bytes": 2932183,
+  "runtime_model_count": 1,
+  "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+  "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+  "runtime_invariants": {
+    "torch_imported_before_prediction": false,
+    "torch_imported_after_lightweight_tools": false,
+    "load_count": 1,
+    "load_attempt_count": 1,
+    "prediction_count": 2,
+    "first_probability": 0.5726382732391357,
+    "second_probability": 0.5726382732391357,
+    "member_count": 1,
+    "ensemble_enabled": false,
+    "selected_seed": 2024
+  },
+  "smoke_count": 7,
+  "peak_rss_bytes": 115949568,
+  "smokes": [
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_get_model_info",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_get_model_info"
+      ],
+      "model_info": {
+        "package_version": "1.0.12",
+        "deployment_profile": "single_model_modelscope",
+        "runtime_backend": "numpy",
+        "source_framework": "pytorch",
+        "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+        "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "architecture": "attention_path_ct_clinical",
+        "model_schema_version": "1.0.0",
+        "feature_order_sha256": "d4a5ecb56733db87f505473a7be1497a7fdd174c0994748d5b9574f7373d3200",
+        "pathology_feature_count": 768,
+        "ct_feature_count": 1409,
+        "ct_group_counts": {
+          "original": 93,
+          "shape": 14,
+          "transformed": 558,
+          "wavelet": 744
+        },
+        "clinical_features": [
+          "age",
+          "male",
+          "Type",
+          "T"
+        ],
+        "member_count": 1,
+        "ensemble_enabled": false,
+        "original_ensemble_member_count": 5,
+        "selected_model_id": "seed_2024",
+        "selected_seed": 2024,
+        "selection_method": "minimum_mae_to_ensemble",
+        "threshold": 0.3529504342004657,
+        "threshold_source": "evaluation_bundle_oof_youden",
+        "threshold_recalibrated": false,
+        "threshold_recalibrated_for_single_model": false,
+        "research_use_only": true,
+        "independent_test_claim": false
+      },
+      "prediction": null,
+      "report": null,
+      "timings": {
+        "initialize_seconds": 4.981594,
+        "tools_list_seconds": 0.010072,
+        "crc_lnm_get_model_info_seconds_1": 0.00642
+      },
+      "total_seconds": 6.52279,
+      "peak_rss_bytes": 106758144,
+      "stderr": "[08/05/26 21:28:21] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58158)->addr(ip='127.0.0.1', port=58159):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58159)->addr(ip='127.0.0.1', port=58158):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_case_data_qc",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_case_data_qc"
+      ],
+      "model_info": null,
+      "prediction": null,
+      "report": null,
+      "timings": {
+        "initialize_seconds": 3.406351,
+        "tools_list_seconds": 0.00343,
+        "crc_lnm_case_data_qc_seconds_1": 0.008349
+      },
+      "total_seconds": 3.788878,
+      "peak_rss_bytes": 106962944,
+      "stderr": "[08/05/26 21:28:25] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58166)->addr(ip='127.0.0.1', port=58167):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58167)->addr(ip='127.0.0.1', port=58166):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_prepare_ct_features",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features"
+      ],
+      "model_info": null,
+      "prediction": null,
+      "report": null,
+      "timings": {
+        "initialize_seconds": 3.729087,
+        "tools_list_seconds": 0.00333,
+        "crc_lnm_case_data_qc_seconds_1": 0.007239,
+        "crc_lnm_prepare_ct_features_seconds_1": 0.009954
+      },
+      "total_seconds": 4.125963,
+      "peak_rss_bytes": 107601920,
+      "stderr": "[08/05/26 21:28:29] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58173)->addr(ip='127.0.0.1', port=58174):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58174)->addr(ip='127.0.0.1', port=58173):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_prepare_pathology_features",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_pathology_features"
+      ],
+      "model_info": null,
+      "prediction": null,
+      "report": null,
+      "timings": {
+        "initialize_seconds": 3.667344,
+        "tools_list_seconds": 0.003062,
+        "crc_lnm_case_data_qc_seconds_1": 0.010103,
+        "crc_lnm_prepare_pathology_features_seconds_1": 0.008761
+      },
+      "total_seconds": 4.064084,
+      "peak_rss_bytes": 107016192,
+      "stderr": "[08/05/26 21:28:33] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58179)->addr(ip='127.0.0.1', port=58180):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58180)->addr(ip='127.0.0.1', port=58179):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_predict_multimodal",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_predict_multimodal"
+      ],
+      "model_info": null,
+      "prediction": {
+        "artifact": {
+          "artifact_id": "pred_1720467109ac37051459146137c586a8",
+          "artifact_type": "prediction",
+          "media_type": "application/json",
+          "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+          "created_at": "2026-08-05T13:28:38.045716Z",
+          "expires_at": "2026-08-05T13:58:38.045716Z"
+        },
+        "positive_probability": 0.5726382732391357,
+        "threshold": 0.3529504342004657,
+        "threshold_recalibrated": false,
+        "predicted_class": 1,
+        "selected_model_id": "seed_2024",
+        "selected_seed": 2024,
+        "member_count": 1,
+        "ensemble_enabled": false,
+        "runtime_backend": "numpy",
+        "source_framework": "pytorch",
+        "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+        "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "decision_margin": 0.21968783903867006,
+        "absolute_threshold_distance": 0.21968783903867006,
+        "decision_proximity": "far_from_threshold",
+        "human_review_required": true,
+        "review_priority": "routine",
+        "review_reasons": [
+          "SINGLE_MODEL_DEPLOYMENT",
+          "THRESHOLD_NOT_RECALIBRATED"
+        ],
+        "ct_source_used": "precomputed",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "independent_test_claim": false,
+        "research_use_only": true,
+        "performance_reference": {
+          "metric": "oof_roc_auc",
+          "value": 0.7749
+        },
+        "load_seconds": 0.0959214000031352,
+        "inference_seconds": 0.10002000001259148
+      },
+      "report": null,
+      "timings": {
+        "initialize_seconds": 3.485928,
+        "tools_list_seconds": 0.003361,
+        "crc_lnm_case_data_qc_seconds_1": 0.006954,
+        "crc_lnm_prepare_ct_features_seconds_1": 0.009519,
+        "crc_lnm_prepare_pathology_features_seconds_1": 0.007264,
+        "crc_lnm_predict_multimodal_seconds_1": 0.107327,
+        "crc_lnm_predict_multimodal_seconds_2": 0.008468
+      },
+      "total_seconds": 4.070003,
+      "peak_rss_bytes": 114540544,
+      "stderr": "[08/05/26 21:28:37] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58181)->addr(ip='127.0.0.1', port=58182):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58182)->addr(ip='127.0.0.1', port=58181):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "crc_lnm_generate_report",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "model_info": null,
+      "prediction": {
+        "artifact": {
+          "artifact_id": "pred_9d47b92a80359bcc9f64df25dc9ec86c",
+          "artifact_type": "prediction",
+          "media_type": "application/json",
+          "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+          "created_at": "2026-08-05T13:28:42.122406Z",
+          "expires_at": "2026-08-05T13:58:42.122406Z"
+        },
+        "positive_probability": 0.5726382732391357,
+        "threshold": 0.3529504342004657,
+        "threshold_recalibrated": false,
+        "predicted_class": 1,
+        "selected_model_id": "seed_2024",
+        "selected_seed": 2024,
+        "member_count": 1,
+        "ensemble_enabled": false,
+        "runtime_backend": "numpy",
+        "source_framework": "pytorch",
+        "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+        "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "decision_margin": 0.21968783903867006,
+        "absolute_threshold_distance": 0.21968783903867006,
+        "decision_proximity": "far_from_threshold",
+        "human_review_required": true,
+        "review_priority": "routine",
+        "review_reasons": [
+          "SINGLE_MODEL_DEPLOYMENT",
+          "THRESHOLD_NOT_RECALIBRATED"
+        ],
+        "ct_source_used": "precomputed",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "independent_test_claim": false,
+        "research_use_only": true,
+        "performance_reference": {
+          "metric": "oof_roc_auc",
+          "value": 0.7749
+        },
+        "load_seconds": 0.07870430001639761,
+        "inference_seconds": 0.08936179999727756
+      },
+      "report": {
+        "artifact": {
+          "artifact_id": "rpt_754757dbb3b31fe48ea408ff8fc0fb0d",
+          "artifact_type": "report",
+          "media_type": "text/html; charset=utf-8",
+          "content_sha256": "3393005da15a5c583e6041387b9e5b16cb9adaa6c5ad3dc1dc796a34655e89b3",
+          "created_at": "2026-08-05T13:28:42.137604Z",
+          "expires_at": "2026-08-05T13:58:42.137604Z"
+        },
+        "report_format": "html",
+        "report_resource_available": false,
+        "sections": [
+          "case_summary",
+          "input_quality",
+          "model_score",
+          "limitations",
+          "expert_review",
+          "safety_statement"
+        ],
+        "heatmap_status": "not_available_in_v1",
+        "feature_attribution_status": "not_available_in_v1",
+        "ct_source_used": "precomputed",
+        "fallback_disclosed": false,
+        "safety_statement": "For research assistance only; this output is not a diagnosis and requires expert review."
+      },
+      "timings": {
+        "initialize_seconds": 3.488302,
+        "tools_list_seconds": 0.003132,
+        "crc_lnm_case_data_qc_seconds_1": 0.007569,
+        "crc_lnm_prepare_ct_features_seconds_1": 0.010091,
+        "crc_lnm_prepare_pathology_features_seconds_1": 0.007659,
+        "crc_lnm_predict_multimodal_seconds_1": 0.095988,
+        "crc_lnm_generate_report_seconds_1": 0.007802
+      },
+      "total_seconds": 4.044232,
+      "peak_rss_bytes": 114266112,
+      "stderr": "[08/05/26 21:28:41] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58183)->addr(ip='127.0.0.1', port=58184):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58184)->addr(ip='127.0.0.1', port=58183):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    },
+    {
+      "status": "PASS",
+      "target_tool": "full_pipeline",
+      "protocol_version": "2025-11-25",
+      "tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "called_tools": [
+        "crc_lnm_get_model_info",
+        "crc_lnm_case_data_qc",
+        "crc_lnm_prepare_ct_features",
+        "crc_lnm_prepare_pathology_features",
+        "crc_lnm_predict_multimodal",
+        "crc_lnm_generate_report"
+      ],
+      "model_info": {
+        "package_version": "1.0.12",
+        "deployment_profile": "single_model_modelscope",
+        "runtime_backend": "numpy",
+        "source_framework": "pytorch",
+        "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+        "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "architecture": "attention_path_ct_clinical",
+        "model_schema_version": "1.0.0",
+        "feature_order_sha256": "d4a5ecb56733db87f505473a7be1497a7fdd174c0994748d5b9574f7373d3200",
+        "pathology_feature_count": 768,
+        "ct_feature_count": 1409,
+        "ct_group_counts": {
+          "original": 93,
+          "shape": 14,
+          "transformed": 558,
+          "wavelet": 744
+        },
+        "clinical_features": [
+          "age",
+          "male",
+          "Type",
+          "T"
+        ],
+        "member_count": 1,
+        "ensemble_enabled": false,
+        "original_ensemble_member_count": 5,
+        "selected_model_id": "seed_2024",
+        "selected_seed": 2024,
+        "selection_method": "minimum_mae_to_ensemble",
+        "threshold": 0.3529504342004657,
+        "threshold_source": "evaluation_bundle_oof_youden",
+        "threshold_recalibrated": false,
+        "threshold_recalibrated_for_single_model": false,
+        "research_use_only": true,
+        "independent_test_claim": false
+      },
+      "prediction": {
+        "artifact": {
+          "artifact_id": "pred_096153dd3b9a9bf2c0b634eed04bf0c6",
+          "artifact_type": "prediction",
+          "media_type": "application/json",
+          "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+          "created_at": "2026-08-05T13:28:46.110535Z",
+          "expires_at": "2026-08-05T13:58:46.110535Z"
+        },
+        "positive_probability": 0.5726382732391357,
+        "threshold": 0.3529504342004657,
+        "threshold_recalibrated": false,
+        "predicted_class": 1,
+        "selected_model_id": "seed_2024",
+        "selected_seed": 2024,
+        "member_count": 1,
+        "ensemble_enabled": false,
+        "runtime_backend": "numpy",
+        "source_framework": "pytorch",
+        "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+        "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "decision_margin": 0.21968783903867006,
+        "absolute_threshold_distance": 0.21968783903867006,
+        "decision_proximity": "far_from_threshold",
+        "human_review_required": true,
+        "review_priority": "routine",
+        "review_reasons": [
+          "SINGLE_MODEL_DEPLOYMENT",
+          "THRESHOLD_NOT_RECALIBRATED"
+        ],
+        "ct_source_used": "precomputed",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+        "independent_test_claim": false,
+        "research_use_only": true,
+        "performance_reference": {
+          "metric": "oof_roc_auc",
+          "value": 0.7749
+        },
+        "load_seconds": 0.07942540000658482,
+        "inference_seconds": 0.08175759998266585
+      },
+      "report": {
+        "artifact": {
+          "artifact_id": "rpt_f6dc7aba5fe05fda77d2652d2324c42c",
+          "artifact_type": "report",
+          "media_type": "text/html; charset=utf-8",
+          "content_sha256": "3393005da15a5c583e6041387b9e5b16cb9adaa6c5ad3dc1dc796a34655e89b3",
+          "created_at": "2026-08-05T13:28:46.126531Z",
+          "expires_at": "2026-08-05T13:58:46.126531Z"
+        },
+        "report_format": "html",
+        "report_resource_available": false,
+        "sections": [
+          "case_summary",
+          "input_quality",
+          "model_score",
+          "limitations",
+          "expert_review",
+          "safety_statement"
+        ],
+        "heatmap_status": "not_available_in_v1",
+        "feature_attribution_status": "not_available_in_v1",
+        "ct_source_used": "precomputed",
+        "fallback_disclosed": false,
+        "safety_statement": "For research assistance only; this output is not a diagnosis and requires expert review."
+      },
+      "timings": {
+        "initialize_seconds": 3.418756,
+        "tools_list_seconds": 0.002953,
+        "crc_lnm_get_model_info_seconds_1": 0.003622,
+        "crc_lnm_case_data_qc_seconds_1": 0.007344,
+        "crc_lnm_prepare_ct_features_seconds_1": 0.009846,
+        "crc_lnm_prepare_pathology_features_seconds_1": 0.007655,
+        "crc_lnm_predict_multimodal_seconds_1": 0.088397,
+        "crc_lnm_generate_report_seconds_1": 0.007
+      },
+      "total_seconds": 3.962467,
+      "peak_rss_bytes": 115949568,
+      "stderr": "[08/05/26 21:28:45] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+      "leaked_child_processes": [],
+      "network_connections": [
+        "addr(ip='127.0.0.1', port=58185)->addr(ip='127.0.0.1', port=58186):ESTABLISHED",
+        "addr(ip='127.0.0.1', port=58186)->addr(ip='127.0.0.1', port=58185):ESTABLISHED"
+      ],
+      "network_violations": [],
+      "cwd_files_created": []
+    }
+  ]
+}

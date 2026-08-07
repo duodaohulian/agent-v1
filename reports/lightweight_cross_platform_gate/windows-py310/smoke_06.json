@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "target_tool": "crc_lnm_generate_report",
+  "protocol_version": "2025-11-25",
+  "tools": [
+    "crc_lnm_get_model_info",
+    "crc_lnm_case_data_qc",
+    "crc_lnm_prepare_ct_features",
+    "crc_lnm_prepare_pathology_features",
+    "crc_lnm_predict_multimodal",
+    "crc_lnm_generate_report"
+  ],
+  "called_tools": [
+    "crc_lnm_case_data_qc",
+    "crc_lnm_prepare_ct_features",
+    "crc_lnm_prepare_pathology_features",
+    "crc_lnm_predict_multimodal",
+    "crc_lnm_generate_report"
+  ],
+  "model_info": null,
+  "prediction": {
+    "artifact": {
+      "artifact_id": "pred_bd3d081cd17544874d068faf328d3c32",
+      "artifact_type": "prediction",
+      "media_type": "application/json",
+      "content_sha256": "c77d1ef84b3c3f70c3198d10e281eae2a0c889665ee89a314a2fdea52e0c0357",
+      "created_at": "2026-08-05T09:10:14.220616Z",
+      "expires_at": "2026-08-05T09:40:14.220616Z"
+    },
+    "positive_probability": 0.5726382732391357,
+    "threshold": 0.3529504342004657,
+    "threshold_recalibrated": false,
+    "predicted_class": 1,
+    "selected_model_id": "seed_2024",
+    "selected_seed": 2024,
+    "member_count": 1,
+    "ensemble_enabled": false,
+    "runtime_backend": "numpy",
+    "source_framework": "pytorch",
+    "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+    "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+    "decision_margin": 0.21968783903867006,
+    "absolute_threshold_distance": 0.21968783903867006,
+    "decision_proximity": "far_from_threshold",
+    "human_review_required": true,
+    "review_priority": "routine",
+    "review_reasons": [
+      "SINGLE_MODEL_DEPLOYMENT",
+      "THRESHOLD_NOT_RECALIBRATED"
+    ],
+    "ct_source_used": "precomputed",
+    "fallback_used": false,
+    "fallback_reason": null,
+    "model_version": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+    "independent_test_claim": false,
+    "research_use_only": true,
+    "performance_reference": {
+      "metric": "oof_roc_auc",
+      "value": 0.7749
+    },
+    "load_seconds": 0.10257159997127019,
+    "inference_seconds": 0.1049914000032004
+  },
+  "report": {
+    "artifact": {
+      "artifact_id": "rpt_f95a04b52f80f9c2241a72f677474c2f",
+      "artifact_type": "report",
+      "media_type": "text/html; charset=utf-8",
+      "content_sha256": "3393005da15a5c583e6041387b9e5b16cb9adaa6c5ad3dc1dc796a34655e89b3",
+      "created_at": "2026-08-05T09:10:14.244803Z",
+      "expires_at": "2026-08-05T09:40:14.244803Z"
+    },
+    "report_format": "html",
+    "report_resource_available": false,
+    "sections": [
+      "case_summary",
+      "input_quality",
+      "model_score",
+      "limitations",
+      "expert_review",
+      "safety_statement"
+    ],
+    "heatmap_status": "not_available_in_v1",
+    "feature_attribution_status": "not_available_in_v1",
+    "ct_source_used": "precomputed",
+    "fallback_disclosed": false,
+    "safety_statement": "For research assistance only; this output is not a diagnosis and requires expert review."
+  },
+  "timings": {
+    "initialize_seconds": 3.033002,
+    "tools_list_seconds": 0.004039,
+    "crc_lnm_case_data_qc_seconds_1": 0.011316,
+    "crc_lnm_prepare_ct_features_seconds_1": 0.012593,
+    "crc_lnm_prepare_pathology_features_seconds_1": 0.008864,
+    "crc_lnm_predict_multimodal_seconds_1": 0.115414,
+    "crc_lnm_generate_report_seconds_1": 0.014809
+  },
+  "total_seconds": 3.670225,
+  "peak_rss_bytes": 110923776,
+  "stderr": "[08/05/26 17:10:13] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+  "leaked_child_processes": [],
+  "network_connections": [
+    "addr(ip='127.0.0.1', port=59021)->addr(ip='127.0.0.1', port=59022):ESTABLISHED",
+    "addr(ip='127.0.0.1', port=59022)->addr(ip='127.0.0.1', port=59021):ESTABLISHED"
+  ],
+  "network_violations": [],
+  "cwd_files_created": []
+}

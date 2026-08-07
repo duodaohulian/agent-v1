@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "target_tool": "crc_lnm_prepare_pathology_features",
+  "protocol_version": "2025-11-25",
+  "tools": [
+    "crc_lnm_get_model_info",
+    "crc_lnm_case_data_qc",
+    "crc_lnm_prepare_ct_features",
+    "crc_lnm_prepare_pathology_features",
+    "crc_lnm_predict_multimodal",
+    "crc_lnm_generate_report"
+  ],
+  "called_tools": [
+    "crc_lnm_case_data_qc",
+    "crc_lnm_prepare_pathology_features"
+  ],
+  "model_info": null,
+  "prediction": null,
+  "report": null,
+  "timings": {
+    "initialize_seconds": 4.431081,
+    "tools_list_seconds": 0.003077,
+    "crc_lnm_case_data_qc_seconds_1": 0.008658,
+    "crc_lnm_prepare_pathology_features_seconds_1": 0.011236
+  },
+  "total_seconds": 4.856574,
+  "peak_rss_bytes": 110366720,
+  "stderr": "[08/05/26 17:41:14] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+  "leaked_child_processes": [],
+  "network_connections": [
+    "addr(ip='127.0.0.1', port=55265)->addr(ip='127.0.0.1', port=55266):ESTABLISHED",
+    "addr(ip='127.0.0.1', port=55266)->addr(ip='127.0.0.1', port=55265):ESTABLISHED"
+  ],
+  "network_violations": [],
+  "cwd_files_created": []
+}

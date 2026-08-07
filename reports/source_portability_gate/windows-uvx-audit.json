@@ -1,0 +1,50 @@
+{
+    "measured_at":  "2026-08-05T21:40:50.9261457+08:00",
+    "local_wheel":  "<RELEASE_ROOT>\\dist\\crc_lnm_medical_agent-1.0.12-py3-none-any.whl",
+    "uv":  "uv 0.12.1 (329541a50 2026-07-31 x86_64-pc-windows-msvc)",
+    "network_note":  "Cold/warm uvx may access package indexes; MCP server itself remains STDIO-only.",
+    "runtimes":  [
+                     {
+                         "python":  "3.12.13",
+                         "executable":  "<RELEASE_ROOT>\\.venv-release\\Scripts\\python.exe",
+                         "uv":  "uv 0.12.1 (329541a50 2026-07-31 x86_64-pc-windows-msvc)",
+                         "uv_cache_dir":  "<TEMP_WORKSPACE>\\AppData\\Local\\Temp\\crc-lnm-uvx-audit-0fa70448-5a5e-402c-a63a-b93a18b980af\\3-12-13\\phase-cache",
+                         "python_downloaded":  false,
+                         "python_discovery_seconds":  0.214,
+                         "venv_seconds":  0.226,
+                         "resolution_seconds":  4.401,
+                         "install_seconds":  17.47,
+                         "console_to_init":  {
+                                                 "seconds":  7.806,
+                                                 "initialize_seconds":  4.810493,
+                                                 "console_to_init_seconds":  6.644226,
+                                                 "peak_rss_bytes":  113823744,
+                                                 "network_connections":  [
+                                                                             "addr(ip=\u0027127.0.0.1\u0027, port=60985)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=60986):ESTABLISHED",
+                                                                             "addr(ip=\u0027127.0.0.1\u0027, port=60986)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=60985):ESTABLISHED"
+                                                                         ]
+                                             },
+                         "cold":  {
+                                      "seconds":  32.295,
+                                      "initialize_seconds":  30.550794,
+                                      "console_to_init_seconds":  31.135546,
+                                      "peak_rss_bytes":  115896320,
+                                      "network_connections":  [
+                                                                  "addr(ip=\u0027127.0.0.1\u0027, port=61122)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=61123):ESTABLISHED",
+                                                                  "addr(ip=\u0027127.0.0.1\u0027, port=61123)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=61122):ESTABLISHED"
+                                                              ]
+                                  },
+                         "warm":  {
+                                      "seconds":  5.845,
+                                      "initialize_seconds":  4.249394,
+                                      "console_to_init_seconds":  4.807469,
+                                      "peak_rss_bytes":  113721344,
+                                      "network_connections":  [
+                                                                  "addr(ip=\u0027127.0.0.1\u0027, port=61137)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=61138):ESTABLISHED",
+                                                                  "addr(ip=\u0027127.0.0.1\u0027, port=61138)-\u003eaddr(ip=\u0027127.0.0.1\u0027, port=61137):ESTABLISHED"
+                                                              ]
+                                  },
+                         "verbose_log":  "<TEMP_WORKSPACE>\\AppData\\Local\\Temp\\crc-lnm-uvx-audit-0fa70448-5a5e-402c-a63a-b93a18b980af\\3-12-13\\verbose-install.log"
+                     }
+                 ]
+}

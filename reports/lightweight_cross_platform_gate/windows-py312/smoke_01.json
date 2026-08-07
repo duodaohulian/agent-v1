@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "target_tool": "crc_lnm_get_model_info",
+  "protocol_version": "2025-11-25",
+  "tools": [
+    "crc_lnm_get_model_info",
+    "crc_lnm_case_data_qc",
+    "crc_lnm_prepare_ct_features",
+    "crc_lnm_prepare_pathology_features",
+    "crc_lnm_predict_multimodal",
+    "crc_lnm_generate_report"
+  ],
+  "called_tools": [
+    "crc_lnm_get_model_info"
+  ],
+  "model_info": {
+    "package_version": "1.0.12",
+    "deployment_profile": "single_model_modelscope",
+    "runtime_backend": "numpy",
+    "source_framework": "pytorch",
+    "source_model_sha256": "40e9fbed0da4fa915626e5c0bc6874a10a9129448271614fd011d31c46deeb17",
+    "runtime_asset_sha256": "e837f8c299cf406827bc1cf0f892c0d053613ec0904ed0679ed5ba582e88832a",
+    "architecture": "attention_path_ct_clinical",
+    "model_schema_version": "1.0.0",
+    "feature_order_sha256": "d4a5ecb56733db87f505473a7be1497a7fdd174c0994748d5b9574f7373d3200",
+    "pathology_feature_count": 768,
+    "ct_feature_count": 1409,
+    "ct_group_counts": {
+      "original": 93,
+      "shape": 14,
+      "transformed": 558,
+      "wavelet": 744
+    },
+    "clinical_features": [
+      "age",
+      "male",
+      "Type",
+      "T"
+    ],
+    "member_count": 1,
+    "ensemble_enabled": false,
+    "original_ensemble_member_count": 5,
+    "selected_model_id": "seed_2024",
+    "selected_seed": 2024,
+    "selection_method": "minimum_mae_to_ensemble",
+    "threshold": 0.3529504342004657,
+    "threshold_source": "evaluation_bundle_oof_youden",
+    "threshold_recalibrated": false,
+    "threshold_recalibrated_for_single_model": false,
+    "research_use_only": true,
+    "independent_test_claim": false
+  },
+  "prediction": null,
+  "report": null,
+  "timings": {
+    "initialize_seconds": 3.924005,
+    "tools_list_seconds": 0.007452,
+    "crc_lnm_get_model_info_seconds_1": 0.01351
+  },
+  "total_seconds": 5.300262,
+  "peak_rss_bytes": 106934272,
+  "stderr": "[08/05/26 17:11:14] INFO     Starting MCP server                 server.py:2506\n                             'crc-lnm-medical-agent' with                      \n                             transport 'stdio'                                 \n",
+  "leaked_child_processes": [],
+  "network_connections": [
+    "addr(ip='127.0.0.1', port=62022)->addr(ip='127.0.0.1', port=62023):ESTABLISHED",
+    "addr(ip='127.0.0.1', port=62023)->addr(ip='127.0.0.1', port=62022):ESTABLISHED"
+  ],
+  "network_violations": [],
+  "cwd_files_created": []
+}

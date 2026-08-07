@@ -1,0 +1,75 @@
+name: release-matrix-1.0.16
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/release-matrix-1.0.16.yml"
+      - "src/crc_lnm_mcp/**"
+      - "scripts/**"
+      - "tests/**"
+      - "pyproject.toml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-wheel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install build twine
+      - run: python -m build
+      - run: python -m twine check dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: crc-lnm-1.0.16-wheel
+          path: dist/crc_lnm_medical_agent_twomeme-1.0.16-py3-none-any.whl
+
+  wheel-only-matrix:
+    needs: build-wheel
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: crc-lnm-1.0.16-wheel
+          path: dist
+      - name: Install final wheel, never editable
+        shell: bash
+        run: |
+          python -m pip install dist/crc_lnm_medical_agent_twomeme-1.0.16-py3-none-any.whl pytest psutil
+          python -m pip check
+          python -c "import importlib.util; assert importlib.util.find_spec('torch') is None"
+      - name: Verify installed package and locked runtime
+        shell: bash
+        env:
+          CANARY_WHEEL: dist/crc_lnm_medical_agent_twomeme-1.0.16-py3-none-any.whl
+        run: |
+          cd "${RUNNER_TEMP}"
+          python -I -B -c "import crc_lnm_mcp; assert 'site-packages' in crc_lnm_mcp.__file__; print(crc_lnm_mcp.__file__)"
+          cd "${GITHUB_WORKSPACE}"
+          python scripts/check_release.py "${CANARY_WHEEL}"
+          python -m pytest -q tests/test_full_lazy_registration.py tests/test_full_lazy_prediction.py tests/test_wheel_contents.py
+      - name: Six independent smokes and complete chain
+        shell: bash
+        run: |
+          python scripts/smoke_published_style_local_wheel.py \
+            --wheel dist/crc_lnm_medical_agent_twomeme-1.0.16-py3-none-any.whl \
+            --output-dir "reports/matrix/${{ matrix.os }}-py${{ matrix.python-version }}" \
+            --output "reports/matrix/${{ matrix.os }}-py${{ matrix.python-version }}.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gate-${{ matrix.os }}-py${{ matrix.python-version }}
+          path: reports/matrix
