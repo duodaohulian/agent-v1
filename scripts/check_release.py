@@ -1,4 +1,4 @@
-"""Fail-fast source and wheel gates for the full-lazy 1.0.17 release."""
+"""Fail-fast source and wheel gates for the full-lazy 1.0.18 release."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ except ModuleNotFoundError:
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = "crc-lnm-medical-agent-twomeme-17"
-VERSION = "1.0.17"
+VERSION = "1.0.18"
 DEPENDENCIES = [
     "fastmcp==2.14.7",
     "pydantic==2.13.4",
@@ -36,7 +36,7 @@ SOURCE_ARCHIVE = ROOT / f"{PACKAGE}-{VERSION}-source.zip"
 SOURCE_PREFIX = f"{PACKAGE}-{VERSION}-source/"
 SOURCE_REQUIRED = {
     ".gitignore",
-    ".github/workflows/release-matrix-1.0.17.yml",
+    ".github/workflows/release-matrix-1.0.18.yml",
     "CHANGELOG.md",
     "MANIFEST.in",
     "README.md",

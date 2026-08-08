@@ -33,5 +33,5 @@ Invoke-ReleasePython scripts/smoke_tool_06_report.py
 Invoke-ReleasePython scripts/smoke_all_six_tools.py --output reports/six_tool_smoke_results.json
 Invoke-ReleasePython scripts/smoke_published_style_local_wheel.py --wheel $Wheel.FullName --invariants-only --output reports/lightweight_cross_platform_gate/windows-current.json
 Invoke-ReleasePython scripts/build_release_artifacts.py
-Invoke-ReleasePython scripts/check_release.py $Wheel.FullName --source-zip (Join-Path $ProjectRoot "crc-lnm-medical-agent-twomeme-17-1.0.17-source.zip")
+Invoke-ReleasePython scripts/check_release.py $Wheel.FullName --source-zip (Join-Path $ProjectRoot "crc-lnm-medical-agent-twomeme-17-1.0.18-source.zip")
 Write-Host "WINDOWS FULL RELEASE VERIFICATION: PASS"

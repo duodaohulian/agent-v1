@@ -22,7 +22,7 @@ SMOKES = [
 def test_default_command_uses_python_scripts_directory(monkeypatch, tmp_path) -> None:
     scripts_dir = tmp_path / "Scripts"
     scripts_dir.mkdir()
-    command = scripts_dir / "crc-lnm-medical-agent.exe"
+    command = scripts_dir / "crc-lnm-medical-agent-twomeme-17.exe"
     command.write_bytes(b"")
     monkeypatch.setattr(published_style.shutil, "which", lambda _name: None)
     monkeypatch.setattr(published_style.sysconfig, "get_path", lambda name: str(scripts_dir))
@@ -96,7 +96,7 @@ def test_windows_verifier_emits_exact_pass_marker_only_at_end() -> None:
 
 
 def test_github_actions_has_six_wheel_only_cells_and_artifacts() -> None:
-    source = (ROOT / ".github/workflows/release-matrix-1.0.17.yml").read_text("utf-8")
+    source = (ROOT / ".github/workflows/release-matrix-1.0.18.yml").read_text("utf-8")
     for marker in (
         "ubuntu-latest",
         "windows-latest",

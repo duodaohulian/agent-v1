@@ -18,7 +18,7 @@ def test_smoke_exposes_exact_post_publish_uvx_command() -> None:
         and isinstance(node.value, ast.Constant)
         and isinstance(node.value.value, str)
     }
-    assert assignments["PUBLISHED_UVX_PACKAGE"] == "crc-lnm-medical-agent-twomeme-17@1.0.17"
+    assert assignments["PUBLISHED_UVX_PACKAGE"] == "crc-lnm-medical-agent-twomeme-17"
     assert "--published-uvx" in path.read_text("utf-8")
 
 

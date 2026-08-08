@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.18 - 2026-08-08
+
+- 修复魔搭部署失败根因：uvx 要求包名与 console script 同名才能通过 `uvx <包名>` 启动；已将 console script 从 `crc-lnm-medical-agent` 改为 `crc-lnm-medical-agent-twomeme-17`，与包名一致。
+- 魔搭配置改为无版本号 `crc-lnm-medical-agent-twomeme-17`（魔搭不识别 `uvx <包名>@版本` 形式），新包唯一版本 1.0.18。
+- 因 PyPI 上 1.0.17 已存在（旧 console script），重新发布 1.0.18。
+
+
 ## 1.0.17 - 2026-08-08
 
 - 修复 6 个工具文件 TOOL_DESCRIPTION 的 UTF-8 编码损坏（字符串未闭合导致 SyntaxError，魔搭部署检测失败退化为"仅可本地使用"），按原始语义恢复中文描述并修正特征维度（1409/768）。

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crc-lnm-medical-agent-twomeme-17"
-version = "1.0.17"
+version = "1.0.18"
 description = "Full-lazy single-model CRC-LNM research-assistance MCP for ModelScope STDIO"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-crc-lnm-medical-agent = "crc_lnm_mcp.server:run"
+crc-lnm-medical-agent-twomeme-17 = "crc_lnm_mcp.server:run"
 
 [tool.setuptools.packages.find]
 where = ["src"]

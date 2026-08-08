@@ -77,7 +77,7 @@ try {
         $VenvPython = Join-Path $Venv "Scripts/python.exe"
         $Install = Invoke-TimedLogged $Uv @("pip", "install", "--python", $VenvPython, "-r", $Lock, "--no-python-downloads", "--cache-dir", $PhaseCache, "-v") $Log "uv pip install"
 
-        $Console = Join-Path $Venv "Scripts/crc-lnm-medical-agent.exe"
+        $Console = Join-Path $Venv "Scripts/crc-lnm-medical-agent-twomeme-17.exe"
         # Record any transient installer-adjacent connection instead of losing
         # timing data; the release verifier separately enforces zero violations.
         $Direct = Invoke-SmokeTimed @("--command", $Console) $Log "console-to-init"
@@ -89,7 +89,7 @@ try {
             "--server-arg=--python", "--server-arg=$Runtime",
             "--server-arg=--no-python-downloads", "--server-arg=--quiet",
             "--server-arg=--from", "--server-arg=$($Wheel[0].FullName)",
-            "--server-arg=crc-lnm-medical-agent"
+            "--server-arg=crc-lnm-medical-agent-twomeme-17"
         )
         $Cold = Invoke-SmokeTimed $UvxArgs $Log "cold uvx"
         $Warm = Invoke-SmokeTimed $UvxArgs $Log "warm uvx"
