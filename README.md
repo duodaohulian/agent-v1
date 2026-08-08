@@ -35,7 +35,7 @@
 }
 ```
 
-ModelScope 中选择托管部署和 STDIO；command 填 `uvx`，args 只填上面一个带版本参数。不要增加 URL、host、port、transport 参数或环境变量。
+ModelScope 中选择托管部署和 STDIO；command 填 `uvx`，args 只填上面一个纯包名参数（**不带版本号**）。不要增加 URL、host、port、transport 参数或环境变量。
 
 ## 本地验收
 
