@@ -7,9 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
     "mcpServers": {
-        "crc-lnm-medical-agent-twomeme": {
+        "crc-lnm-medical-agent-twomeme-17": {
             "command": "uvx",
-            "args": ["crc-lnm-medical-agent-twomeme@1.0.17"],
+            "args": ["crc-lnm-medical-agent-twomeme-17@1.0.17"],
         }
     }
 }

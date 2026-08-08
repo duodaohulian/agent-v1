@@ -5,8 +5,8 @@
 ## 更新说明 (v1.0.17)
 
 - **修复工具描述编码损坏**：6 个工具的 `TOOL_DESCRIPTION` 中文字符串存在 UTF-8 编码损坏（字符串未闭合导致 `SyntaxError`），已按原始语义修复，恢复包的可导入与魔搭托管部署兼容性
-- **版本升级到 1.0.17**：因 PyPI 上已存在损坏的 1.0.16，需重新发布 1.0.17 以通过魔搭"可托管部署"检测；`modelscope-mcp.json` 与 README 配置统一指向 `@1.0.17`
-- **PyPI 包名不变**：`crc-lnm-medical-agent-twomeme`，最新版本 1.0.17
+- **版本升级到 1.0.17**：因 PyPI 上已存在损坏的 1.0.16，改用新包名重新发布 1.0.17 以通过魔搭"可托管部署"检测；`modelscope-mcp.json` 与 README 配置统一指向新包名 `@1.0.17`
+- **新 PyPI 包名**：`crc-lnm-medical-agent-twomeme-17`，最新版本 1.0.17
 
 ## 功能列表
 
@@ -24,10 +24,10 @@
 ```json
 {
   "mcpServers": {
-    "crc-lnm-medical-agent-twomeme": {
+    "crc-lnm-medical-agent-twomeme-17": {
       "command": "uvx",
       "args": [
-        "crc-lnm-medical-agent-twomeme@1.0.17"
+        "crc-lnm-medical-agent-twomeme-17@1.0.17"
       ]
     }
   }
