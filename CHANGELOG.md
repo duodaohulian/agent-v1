@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.17 - 2026-08-08
+
+- 修复 6 个工具文件 TOOL_DESCRIPTION 的 UTF-8 编码损坏（字符串未闭合导致 SyntaxError，魔搭部署检测失败退化为"仅可本地使用"），按原始语义恢复中文描述并修正特征维度（1409/768）。
+- 版本升级到 1.0.17 并需重新发布 PyPI；modelscope-mcp.json / README 配置统一指向 @1.0.17。
+- 目标：通过魔搭"可托管部署"STDIO 检测（uvx 包名 → initialize → list_tools）。
+
+
 ## 1.0.16 �?2026-08-07
 
 - **Tool 签名回滚�?GitHub v1.0.12 风格**：重新使�?`Literal["1.1.0"]` + `UUID4` + Pydantic BaseModel 嵌套输入 (`input: PredictMultimodalInput` / `input: CaseQCInput` / �?，这�?ModelScope STDIO 通过 FastMCP 2.14.7 验证可加载的唯一签名组合�?- **保留 v1.0.16 的中�?description 字段**�? 个工具的 `TOOL_DESCRIPTION` 字符串保持不变；`mcp.tool(name=TOOL_NAME, description=TOOL_DESCRIPTION)` �?`register()` 中继续使用�?- **测试脚本同步**：smoke 客户端改为嵌�?`input: { ... }` 调用 (例如 `input: { qc_artifact_id, source: { mode: "precomputed" } }`)�?- **`package_version` / `service_version` 升级�?1.0.16**；GitHub Actions workflow 文件名替换为 `release-matrix-1.0.16.yml`，跨平台矩阵全绿�?

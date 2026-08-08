@@ -12,7 +12,7 @@ from crc_lnm_mcp.runtime import RuntimeProvider
 TOOL_NAME = "crc_lnm_generate_report"
 TOOL_DESCRIPTION = (
     "生成基于质控结果和预测结果的综合研究报告，整合淋巴转移预测结果，"
-    "生成结构化的研究报告供医学专业人员参考�?
+    "生成结构化的研究报告供医学专业人员参考。"
 )
 
 
@@ -57,7 +57,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
                 }
             ],
             "provenance": {
-                "service_version": "1.0.16",
+                "service_version": "1.0.17",
                 "model_version": None,
                 "model_schema_version": "1.0.0",
                 "model_feature_order_sha256": runtime.metadata.get_model_info()[

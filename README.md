@@ -1,12 +1,12 @@
-# CRC-LNM Medical Agent 1.0.16
+# CRC-LNM Medical Agent 1.0.17
 
 面向 ModelScope 托管 STDIO 的完整懒加载纯 NumPy 单模型版本。一个 console script、一个进程内注册六个医学工具；initialize 和 tools/list 不读取模型参数或展开病例。第一次 `crc_lnm_predict_multimodal` 调用校验并加载唯一的 `seed_2024` NumPy runtime asset，后续预测复用同一实例。默认安装不依赖 PyTorch、NVIDIA 或 CUDA 包。
 
-## 更新说明 (v1.0.16)
+## 更新说明 (v1.0.17)
 
-- **回滚 tool 签名到 GitHub v1.0.12 风格**：重新使用 `Literal["1.1.0"]` + `UUID4` + Pydantic BaseModel 嵌套输入（`input: PredictMultimodalInput`），恢复 FastMCP 2.14.7 在 ModelScope STDIO 上的兼容性
-- **保留 v1.0.14 的中文 description 字段**：6 个工具的 `TOOL_DESCRIPTION` 完整保留，便于 Nexent/Claude Desktop JSON-RPC 客户端解析
-- **PyPI 包名不变**：`crc-lnm-medical-agent-twomeme`，最新版本 1.0.16
+- **修复工具描述编码损坏**：6 个工具的 `TOOL_DESCRIPTION` 中文字符串存在 UTF-8 编码损坏（字符串未闭合导致 `SyntaxError`），已按原始语义修复，恢复包的可导入与魔搭托管部署兼容性
+- **版本升级到 1.0.17**：因 PyPI 上已存在损坏的 1.0.16，需重新发布 1.0.17 以通过魔搭"可托管部署"检测；`modelscope-mcp.json` 与 README 配置统一指向 `@1.0.17`
+- **PyPI 包名不变**：`crc-lnm-medical-agent-twomeme`，最新版本 1.0.17
 
 ## 功能列表
 
@@ -27,7 +27,7 @@
     "crc-lnm-medical-agent-twomeme": {
       "command": "uvx",
       "args": [
-        "crc-lnm-medical-agent-twomeme@1.0.16"
+        "crc-lnm-medical-agent-twomeme@1.0.17"
       ]
     }
   }

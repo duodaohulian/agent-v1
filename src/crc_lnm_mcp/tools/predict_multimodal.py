@@ -11,8 +11,8 @@ from crc_lnm_mcp.runtime import RuntimeProvider
 
 TOOL_NAME = "crc_lnm_predict_multimodal"
 TOOL_DESCRIPTION = (
-    "基于CT影像特征、病理特征和临床信息进行结直肠癌淋巴结转移预测�?
-    "使用NumPy单模型进行推理，返回转移概率、阈值判断和置信度信息�?
+    "基于CT影像特征、病理特征和临床信息进行结直肠癌淋巴结转移预测。"
+    "使用NumPy单模型进行推理，返回转移概率、阈值判断和置信度信息。"
 )
 
 
@@ -61,7 +61,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
                 ],
                 "warnings": [],
                 "provenance": {
-                    "service_version": "1.0.16",
+                    "service_version": "1.0.17",
                     "model_version": None,
                     "model_schema_version": "1.0.0",
                     "model_feature_order_sha256": None,
@@ -99,7 +99,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
                 },
             ],
             "provenance": {
-                "service_version": "1.0.16",
+                "service_version": "1.0.17",
                 "model_version": data["model_version"],
                 "model_schema_version": "1.0.0",
                 "model_feature_order_sha256": runtime.metadata.get_model_info()[

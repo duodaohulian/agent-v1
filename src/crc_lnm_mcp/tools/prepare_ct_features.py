@@ -11,8 +11,8 @@ from crc_lnm_mcp.runtime import RuntimeProvider
 
 TOOL_NAME = "crc_lnm_prepare_ct_features"
 TOOL_DESCRIPTION = (
-    "准备结直肠癌病例的CT影像特征，从预计算数据中提取并验�?409维CT特征向量�?
-    "用于后续淋巴转移预测�?
+    "准备结直肠癌病例的CT影像特征，从预计算数据中提取并验证1409维CT特征向量。"
+    "用于后续淋巴转移预测。"
 )
 
 
@@ -49,7 +49,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
             "errors": [],
             "warnings": [],
             "provenance": {
-                "service_version": "1.0.16",
+                "service_version": "1.0.17",
                 "model_version": None,
                 "model_schema_version": "1.0.0",
                 "model_feature_order_sha256": None,

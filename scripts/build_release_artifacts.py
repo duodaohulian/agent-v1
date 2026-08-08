@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = "crc-lnm-medical-agent-twomeme"
-VERSION = "1.0.16"
+VERSION = "1.0.17"
 ARCHIVE = ROOT / f"{PACKAGE}-{VERSION}-source.zip"
 PREFIX = f"{PACKAGE}-{VERSION}-source"
 ROOT_FILES = ["README.md", "MANIFEST.in", "modelscope-mcp.json", "pyproject.toml"]

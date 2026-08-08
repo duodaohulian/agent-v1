@@ -12,7 +12,7 @@ from crc_lnm_mcp.runtime import RuntimeProvider
 TOOL_NAME = "crc_lnm_case_data_qc"
 TOOL_DESCRIPTION = (
     "对结直肠癌病例数据进行质量控制检查，验证临床信息、CT影像特征和病理特征的"
-    "完整性和一致性，支持回退策略配置�?
+    "完整性和一致性，支持回退策略配置。"
 )
 
 
@@ -59,7 +59,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
                 }
             ],
             "provenance": {
-                "service_version": "1.0.16",
+                "service_version": "1.0.17",
                 "model_version": None,
                 "model_schema_version": None,
                 "model_feature_order_sha256": None,

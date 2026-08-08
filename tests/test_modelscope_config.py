@@ -9,7 +9,7 @@ EXPECTED = {
     "mcpServers": {
         "crc-lnm-medical-agent-twomeme": {
             "command": "uvx",
-            "args": ["crc-lnm-medical-agent-twomeme@1.0.16"],
+            "args": ["crc-lnm-medical-agent-twomeme@1.0.17"],
         }
     }
 }

@@ -10,8 +10,8 @@ from crc_lnm_mcp.runtime import RuntimeProvider
 
 TOOL_NAME = "crc_lnm_get_model_info"
 TOOL_DESCRIPTION = (
-    "获取CRC-LNM单模型部署的元数据信息，包括模型ID、版本、阈值、训练参数等�?
-    "该工具用于查询当前部署模型的规格和配置信息�?
+    "获取CRC-LNM单模型部署的元数据信息，包括模型ID、版本、阈值、训练参数等。"
+    "该工具用于查询当前部署模型的规格和配置信息。"
 )
 
 
@@ -58,7 +58,7 @@ def register(mcp: Any, runtime: RuntimeProvider) -> None:
                 },
             ],
             "provenance": {
-                "service_version": "1.0.16",
+                "service_version": "1.0.17",
                 "model_version": data["selected_model_id"],
                 "model_schema_version": data["model_schema_version"],
                 "model_feature_order_sha256": data["feature_order_sha256"],
