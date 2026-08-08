@@ -4,10 +4,10 @@
 
 ## 更新说明 (v1.0.18)
 
-- **修复魔搭部署失败**：魔搭/uvx 要求包名与 console script 同名才能通过 `uvx <包名>` 启动；已将 console script 从 `crc-lnm-medical-agent` 改为 `crc-lnm-medical-agent-twomeme-17`，与包名一致
-- **配置改为无版本号**：魔搭对 `uvx <包名>@版本` 形式无法识别，`modelscope-mcp.json` 与 README 配置统一使用不带版本号的 `crc-lnm-medical-agent-twomeme-17`（新包唯一版本 1.0.18）
+- **修复魔搭部署失败**：魔搭/uvx 要求包名与 console script 同名才能通过 `uvx <包名>` 启动；已将 console script 从 `crc-lnm-medical-agent` 改为 `crc-lnm-medical-agent-hosted`，与包名一致
+- **配置改为无版本号**：魔搭对 `uvx <包名>@版本` 形式无法识别，`modelscope-mcp.json` 与 README 配置统一使用不带版本号的 `crc-lnm-medical-agent-hosted`（新包唯一版本 1.0.18）
 - **版本升级到 1.0.18**：PyPI 上 1.0.17 已存在（旧 console script），需重新发布 1.0.18
-- **新 PyPI 包名**：`crc-lnm-medical-agent-twomeme-17`，最新版本 1.0.18
+- **新 PyPI 包名**：`crc-lnm-medical-agent-hosted`，最新版本 1.0.18
 
 ## 功能列表
 
@@ -25,10 +25,10 @@
 ```json
 {
   "mcpServers": {
-    "crc-lnm-medical-agent-twomeme-17": {
+    "crc-lnm-medical-agent-hosted": {
       "command": "uvx",
       "args": [
-        "crc-lnm-medical-agent-twomeme-17"
+        "crc-lnm-medical-agent-hosted"
       ]
     }
   }

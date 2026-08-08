@@ -8,7 +8,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGE = "crc-lnm-medical-agent-twomeme-17"
+PACKAGE = "crc-lnm-medical-agent-hosted"
 VERSION = "1.0.18"
 ARCHIVE = ROOT / f"{PACKAGE}-{VERSION}-source.zip"
 PREFIX = f"{PACKAGE}-{VERSION}-source"
